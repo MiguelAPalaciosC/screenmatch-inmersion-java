@@ -31,11 +31,13 @@ public class Main {
             System.out.println("Pelicula retro que vale la pena ver");
         }
 
-        for (int i = 0; i < 3; i++) {
+        int i = 0;
+        while (i < 3) {
             Scanner teclado = new Scanner(System.in);
             System.out.println("Ingresa la nota que le darias a Matrix");
             double notaDeMatrix = teclado.nextDouble();
             mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaDeMatrix;
+            i++;
         }
 
         System.out.println("Media de la pelicula " +
