@@ -40,6 +40,7 @@ public class Main {
             i++;
         }
 
+
         System.out.println("Media de la pelicula " +
                 "Matrix Calculada por el usuario es: " + mediaEvaluacionUsuario / 3);
     }
