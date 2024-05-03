@@ -1,47 +1,35 @@
-import java.util.Scanner;
+import modelo.Pelicula;
+import modelo.Serie;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hola mundo, primer mensaje de la inmercion java");
-        //System.out.println("Pelicula Matrix");
+        Principal principal = new Principal();
+        principal.muestraElMenu();
+       /** Pelicula matrix = new Pelicula();
 
-        //Declaracion de variables
-        int fechaDeLanzamiento = 1999;
-        double evaluacion = 4.5;
-        boolean incluidoEnELPlanBasico = true;
-        String nombre = "Matrix";
-        String sinopsis = """
-                La mejor pelicula del fin del milenio
-                Tiene tres secuelas
-                """;
-        double mediaEvaluacionUsuario = 0;
+        matrix.setNombre("Matrix");
+        matrix.setTiempoDeDuracionEnMinutos(120);
+        matrix.setFechaDeLanzamiento(1999);
+        matrix.setIncluidoEnElPlanBasico(true);
 
-        System.out.println("Pelicula: " + nombre);
-        System.out.println("Fecha de lanzamiento: " + fechaDeLanzamiento);
-        System.out.println("Calificacion: " + evaluacion);
-        System.out.println("Esta incluida en su plan: " + incluidoEnELPlanBasico);
+        matrix.mostrarFichaTecnica();
 
-        double mediaEvaluacion = (4.5 + 4.8 +3) / 3;
+        Pelicula encanto = new Pelicula();
 
-        System.out.println("Media de evaluacion de Matrix: " + mediaEvaluacion);
+        encanto.setNombre("Encanto");
+        encanto.setTiempoDeDuracionEnMinutos(120);
+        encanto.setFechaDeLanzamiento(2020);
+        encanto.setIncluidoEnElPlanBasico(false);
 
-        if (fechaDeLanzamiento >= 2023) {
-            System.out.println("Pelicula popular en el momento");
-        } else {
-            System.out.println("Pelicula retro que vale la pena ver");
-        }
+        encanto.mostrarFichaTecnica();
 
-        int i = 0;
-        while (i < 3) {
-            Scanner teclado = new Scanner(System.in);
-            System.out.println("Ingresa la nota que le darias a Matrix");
-            double notaDeMatrix = teclado.nextDouble();
-            mediaEvaluacionUsuario = mediaEvaluacionUsuario + notaDeMatrix;
-            i++;
-        }
+        Serie friends = new Serie();
+        friends.setNombre("Friends");
+        friends.setFechaDeLanzamiento(1996);
+        friends.setTemporadas(10);
+        friends.setEpisodiosPorTemporada(22);
+        friends.setDuracionEnMinutosPorEpisodio(30);
 
-
-        System.out.println("Media de la pelicula " +
-                "Matrix Calculada por el usuario es: " + mediaEvaluacionUsuario / 3);
+        friends.mostrarFichaTecnica();**/
     }
 }
